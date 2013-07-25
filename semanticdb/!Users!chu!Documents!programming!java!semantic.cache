@@ -1,0 +1,32 @@
+;; Object java/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "java/"
+  :tables (list 
+   (semanticdb-table "Test.java"
+    :major-mode 'jde-mode
+    :tags 
+        '( ("Test" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [48 61]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [24 114]))                  
+                :type "class")
+                nil [1 116]))          
+    :file "Test.java"
+    :pointmax 118
+    :fsize 117
+    :lastmodtime '(20977 29636 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!chu!Documents!programming!java!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
