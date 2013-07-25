@@ -1,0 +1,25 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("chu_reading.tex"
+ (filename . "~/Documents/chuanhu/summary/chu_reading.tex")
+ (front-context-string . "\\begin{equation*")
+ (rear-context-string . "- u_k||$ one.\n  ")
+ (position . 1463))
+("diary.org"
+ (filename . "~/Dropbox/ChuanHu/diary.org")
+ (front-context-string)
+ (rear-context-string . "s any reference\n")
+ (position . 841))
+("life.org"
+ (filename . "~/Dropbox/ChuanHu/life.org")
+ (front-context-string . "\n* Emacs \n** Ema")
+ (rear-context-string)
+ (position . 1))
+("latex_math_mode"
+ (filename . "~/Documents/programming/emacs/latex_math_mode")
+ (front-context-string . "key             ")
+ (rear-context-string)
+ (position . 1))
+)
