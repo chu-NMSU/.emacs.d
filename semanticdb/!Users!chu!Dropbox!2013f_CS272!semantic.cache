@@ -1,0 +1,61 @@
+;; Object 2013f_CS272/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "2013f_CS272/"
+  :tables (list 
+   (semanticdb-table "AssertionEg.java"
+    :major-mode 'jde-mode
+    :tags 
+        '( ("basic" package nil nil [1 15])
+            ("AssertionEg" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("maxOf2" function
+                       (:throws ("AssertionError")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable (:type "int") (reparse-symbol formal_parameters) [71 76])
+                            ("b" variable (:type "int") (reparse-symbol formal_parameters) [78 83]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [46 284])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [336 349]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [312 525]))                  
+                :type "class")
+                nil [17 528]))          
+    :file "AssertionEg.java"
+    :pointmax 529
+    :fsize 528
+    :lastmodtime '(21023 54079 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "AssertionEgTest.java"
+    :major-mode 'jde-mode
+    :tags 
+        '( ("basic" package nil nil [1 15])
+            ("org.junit.Test" include nil nil [52 74])
+            ("AssertionEgTest" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("testMaxOf2" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [117 213]))                  
+                :type "class")
+                nil [77 216]))          
+    :file "AssertionEgTest.java"
+    :pointmax 217
+    :fsize 216
+    :lastmodtime '(21023 54103 0 0)
+    :unmatched-syntax '((MULT 48 . 49) (DOT 47 . 48) (IDENTIFIER 41 . 47) (DOT 40 . 41) (IDENTIFIER 35 . 40) (DOT 34 . 35) (IMPORT 17 . 23) (STATIC 24 . 30) (IDENTIFIER 31 . 34))
+    )
+   )
+  :file "!Users!chu!Dropbox!2013f_CS272!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,318 @@
+;; Object ChuanHu/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ChuanHu/"
+  :tables (list 
+   (semanticdb-table "life.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("life" section nil nil [240 2240])
+            ("/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = \"code-highlighted\";
+     elem.className   = \"code-highlighted\";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->" section nil nil [2240 3851])
+            ("/**
+ *
+ * @source: http://orgmode.org/mathjax/MathJax.js
+ *
+ * @licstart  The following is the entire license notice for the
+ *  JavaScript code in http://orgmode.org/mathjax/MathJax.js.
+ *
+ * Copyright (C) 2012-2013  MathJax
+ *
+ * Licensed under the Apache License, Version 2.0 (the \"License\");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an \"AS IS\" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in http://orgmode.org/mathjax/MathJax.js.
+ *
+ */
+
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code below.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code below is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code below.
+*/
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: [\"MMLorHTML.js\"], jax: [\"input/TeX\"],
+            jax: [\"input/TeX\", \"output/HTML-CSS\"],
+        extensions: [\"tex2jax.js\",\"TeX/AMSmath.js\",\"TeX/AMSsymbols.js\",
+                     \"TeX/noUndefined.js\"],
+        tex2jax: {
+            inlineMath: [ [\"\\\\(\",\"\\\\)\"] ],
+            displayMath: [ ['$$','$$'], [\"\\\\[\",\"\\\\]\"], [\"\\\\begin{displaymath}\",\"\\\\end{displaymath}\"] ],
+            skipTags: [\"script\",\"noscript\",\"style\",\"textarea\",\"pre\",\"code\"],
+            ignoreClass: \"tex2jax_ignore\",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: \"TeX\"
+        },
+        showProcessingMessages: true,
+        displayAlign: \"center\",
+        displayIndent: \"2em\",
+
+        \"HTML-CSS\": {
+             scale: 100,
+             availableFonts: [\"STIX\",\"TeX\"],
+             preferredFont: \"TeX\",
+             webFont: \"TeX\",
+             imageFont: \"TeX\",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    \"MML\",
+                 Firefox: \"MML\",
+                 Opera:   \"HTML\",
+                 other:   \"HTML\"
+             }
+        }
+    });
+/*]]>*///-->" section nil nil [3851 7226])
+            ("life" section (:members 
+              ( ("life" section (:members 
+                  ( ("Table of Contents" section (:members 
+                      ( ("1 Emacs" anchor nil nil [7411 7414])
+                        ("1.1 Emacs Basis" anchor nil nil [7449 7452])
+                        ("1.2 EShell" anchor nil nil [7497 7500])
+                        ("1.3 Keyboard Macros" anchor nil nil [7540 7543])
+                        ("1.3.1 Basic Use" anchor nil nil [7592 7595])
+                        ("1.4 Elisp learning" anchor nil nil [7654 7657])
+                        ("1.4.1 Miscellaneous" anchor nil nil [7705 7708])
+                        ("1.4.2" anchor nil nil [7759 7762])
+                        ("1.4.3 Evaluation" anchor nil nil [7800 7803])
+                        ("1.4.4 Function" anchor nil nil [7851 7854])
+                        ("1.4.5 Let" anchor nil nil [7900 7903])
+                        ("1.4.6 If" anchor nil nil [7944 7947])
+                        ("1.4.7 save-excursion" anchor nil nil [7987 7990])
+                        ("1.4.8 Elisp data structure" anchor nil nil [8042 8045])
+                        ("1.5 org basic motion and editing" anchor nil nil [8115 8118])
+                        ("1.6 org TODO list and time stamp" anchor nil nil [8180 8183])
+                        ("1.7 org sparse tree" anchor nil nil [8245 8248])
+                        ("1.8 org literal example" anchor nil nil [8297 8300])
+                        ("1.9 plain list" anchor nil nil [8353 8356])
+                        ("1.10 AUCTex" anchor nil nil [8400 8403])
+                        ("1.11 RefTex" anchor nil nil [8445 8448])
+                        ("1.12 emacs book mark" anchor nil nil [8490 8493])
+                        ("1.13 emacs regular expression" anchor nil nil [8544 8547])
+                        ("1.14 Miscellaneous" anchor nil nil [8607 8610])
+                        ("1.15 ESS mode" anchor nil nil [8659 8662])
+                        ("1.16 CEDET mode" anchor nil nil [8706 8709])
+                        ("1.17 JDEE" anchor nil nil [8755 8758])
+                        ("1.17.1 Abbreviations" anchor nil nil [8798 8801])
+                        ("1.17.2 Auto complete" anchor nil nil [8854 8857])
+                        ("1.18 Python" anchor nil nil [8922 8925])
+                        ("2 Latex" anchor nil nil [8979 8982])
+                        ("3 DBLP Search Tech" anchor nil nil [9017 9020])
+                        ("4 R" anchor nil nil [9066 9069])
+                        ("5 Java" anchor nil nil [9100 9103])
+                        ("5.1 Basic java commond" anchor nil nil [9137 9140])
+                        ("5.2 Maven" anchor nil nil [9192 9195])
+                        ("5.3 jps command" anchor nil nil [9234 9237])
+                        ("5.4 Hadoop" anchor nil nil [9282 9285])
+                        ("5.4.1 Basic usage" anchor nil nil [9325 9328])
+                        ("6 Python" anchor nil nil [9400 9403])
+                        ("6.1 NLTK" anchor nil nil [9439 9442])
+                        ("7 Algorithm" anchor nil nil [9492 9495])
+                        ("7.1 Graph Algorithm" anchor nil nil [9534 9537])
+                        ("7.2 NP complete" anchor nil nil [9586 9589])
+                        ("8 Database" anchor nil nil [9646 9649])
+                        ("8.1 MySQL" anchor nil nil [9687 9690])
+                        ("8.2 Relational Algebra and SQL" anchor nil nil [9729 9732])
+                        ("8.3 Storage and Index" anchor nil nil [9792 9795])
+                        ("8.4 Query Evaluation" anchor nil nil [9846 9849])
+                        ("8.5 External Sorting" anchor nil nil [9899 9902])
+                        ("8.6 Evaluating Join Operator" anchor nil nil [9952 9955])
+                        ("8.6.1 Nested Loop" anchor nil nil [10013 10016])
+                        ("8.6.2 Hash Join" anchor nil nil [10065 10068])
+                        ("8.6.3 General Join Conditions" anchor nil nil [10115 10118])
+                        ("8.7 Evaluation Other Operators" anchor nil nil [10191 10194])
+                        ("8.7.1 Selection" anchor nil nil [10254 10257])
+                        ("8.7.2 Projection" anchor nil nil [10304 10307])
+                        ("8.7.3 Set Operations" anchor nil nil [10355 10358])
+                        ("8.8 Transaction Management" anchor nil nil [10422 10425])
+                        ("8.9 neo4j" anchor nil nil [10481 10484])
+                        ("8.9.1 Cypher: graph query language" anchor nil nil [10523 10526])
+                        ("9 IR" anchor nil nil [10615 10618])
+                        ("9.1 XML retrieval" anchor nil nil [10650 10653])
+                        ("10 Unix" anchor nil nil [10712 10715])
+                        ("10.1 Command" anchor nil nil [10751 10754])
+                        ("10.2 MacOS" anchor nil nil [10797 10800])
+                        ("10.2.1 iTerm2" anchor nil nil [10841 10844])
+                        ("10.3 Shell programming &amp; skill" anchor nil nil [10902 10905])
+                        ("10.4 Department host list(3.4GHz)" anchor nil nil [10970 10973])
+                        ("11 Fun" anchor nil nil [11049 11052])
+                        ("12 Graphviz" anchor nil nil [11087 11090])
+                        ("13 MapReduce" anchor nil nil [11130 11133])
+                        ("14 Semantic Web" anchor nil nil [11174 11177])
+                        ("15 WordNet" anchor nil nil [11221 11224])
+                        ("16 math" anchor nil nil [11263 11266]))                      ) nil [7341 11368])
+                    ("1" section (:members 
+                      ( ("1.1" section nil nil [11536 15928])
+                        ("1.2" section nil nil [15928 16278])
+                        ("1.3" section (:members 
+                          ( ("1.3.1" section nil nil [16597 17812]))                          ) nil [16278 17812])
+                        ("1.4" section (:members 
+                          ( ("1.4.1" section nil nil [17998 18630])
+                            ("1.4.2" section nil nil [18630 19067])
+                            ("1.4.3" section nil nil [19067 19360])
+                            ("1.4.4" section nil nil [19360 21024])
+                            ("1.4.5" section nil nil [21024 21401])
+                            ("1.4.6" section nil nil [21401 21685])
+                            ("1.4.7" section nil nil [21685 22175])
+                            ("1.4.8" section nil nil [22175 23636]))                          ) nil [17812 23636])
+                        ("1.5" section nil nil [23636 25121])
+                        ("1.6" section nil nil [25121 25542])
+                        ("1.7" section nil nil [25542 25994])
+                        ("1.8" section (:members 
+                          ( ("http://orgmode.org/manual/Easy-Templates.html#Easy-Templates" anchor nil nil [26362 26365]))                          ) nil [25994 26811])
+                        ("1.9" section nil nil [26811 28067])
+                        ("1.10" section nil nil [28067 28553])
+                        ("1.11" section nil nil [28553 28906])
+                        ("1.12" section nil nil [28906 29334])
+                        ("1.13" section (:members 
+                          ( ("http://www.gnu.org/software/emacs/manual/html_node/emacs/Regexps.html" anchor nil nil [29476 29479]))                          ) nil [29334 29702])
+                        ("1.14" section nil nil [29702 30764])
+                        ("1.15" section nil nil [30764 31061])
+                        ("1.16" section nil nil [31061 31251])
+                        ("1.17" section (:members 
+                          ( ("1.17.1" section nil nil [31642 31844])
+                            ("1.17.2" section nil nil [31844 32255]))                          ) nil [31251 32255])
+                        ("1.18" section nil nil [32255 32446]))                      ) nil [11368 32446])
+                    ("2" section (:members 
+                      ( ("http://en.wikibooks.org/wiki/LaTeX/Fonts" anchor nil nil [32586 32589])
+                        ("http://en.wikibooks.org/wiki/LaTeX/Mathematics#Formatting_mathematics_symbols" anchor nil nil [32702 32705]))                      ) nil [32446 33288])
+                    ("3" section nil nil [33288 33691])
+                    ("4" section nil nil [33691 34907])
+                    ("5" section (:members 
+                      ( ("5.1" section nil nil [35074 35492])
+                        ("5.2" section nil nil [35492 35674])
+                        ("5.3" section nil nil [35674 35984])
+                        ("5.4" section (:members 
+                          ( ("5.4.1" section nil nil [36162 36893]))                          ) nil [35984 36893]))                      ) nil [34907 36893])
+                    ("6" section (:members 
+                      ( ("6.1" section nil nil [37062 37248]))                      ) nil [36893 37248])
+                    ("7" section (:members 
+                      ( ("https://www.quora.com/Algorithms/In-asymptotic-notation-given-g-n-is-the-union-of-O-g-n-and-Ω-g-n-the-universal-set-U-of-all-functions/answer/David-Goldstein-9?__snids__=92571323&amp;__nsrc__=1" anchor nil nil [37589 37592])
+                        ("https://www.quora.com/Algorithms/Is-small-o-g-n-the-set-difference-of-Theta-g-n-and-O-g-n/answers/2028247?__snids__=92578629&amp;__nsrc__=1" anchor nil nil [38083 38086])
+                        ("7.1" section nil nil [38725 40787])
+                        ("7.2" section nil nil [40787 40980]))                      ) nil [37248 40980])
+                    ("8" section (:members 
+                      ( ("8.1" section nil nil [41151 41625])
+                        ("8.2" section nil nil [41625 41998])
+                        ("8.3" section nil nil [41998 42922])
+                        ("8.4" section nil nil [42922 43840])
+                        ("8.5" section nil nil [43840 46757])
+                        ("8.6" section (:members 
+                          ( ("8.6.1" section nil nil [47140 49102])
+                            ("8.6.2" section nil nil [49102 49908])
+                            ("8.6.3" section nil nil [49908 51240]))                          ) nil [46757 51240])
+                        ("8.7" section (:members 
+                          ( ("8.7.1" section nil nil [51438 52340])
+                            ("8.7.2" section nil nil [52340 52627])
+                            ("8.7.3" section nil nil [52627 52831]))                          ) nil [51240 52831])
+                        ("8.8" section nil nil [52831 53827])
+                        ("8.9" section (:members 
+                          ( ("8.9.1" section nil nil [54004 54227]))                          ) nil [53827 54227]))                      ) nil [40980 54227])
+                    ("9" section (:members 
+                      ( ("9.1" section nil nil [54393 55393]))                      ) nil [54227 55393])
+                    ("10" section (:members 
+                      ( ("10.1" section nil nil [55564 58102])
+                        ("10.2" section (:members 
+                          ( ("https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/top.1.html" anchor nil nil [58798 58801])
+                            ("10.2.1" section nil nil [60246 61031]))                          ) nil [58102 61031])
+                        ("10.3" section nil nil [61031 61773])
+                        ("10.4" section nil nil [61773 62602]))                      ) nil [55393 62602])
+                    ("11" section (:members 
+                      ( ("http://video.baomihua.com/play/NDI4NjgzNjEvMTU0MzE2OTc" anchor nil nil [62716 62719]))                      ) nil [62602 62911])
+                    ("12" section (:members 
+                      ( ("http://www.graphviz.org/doc/info/output.html" anchor nil nil [63149 63152]))                      ) nil [62911 63335])
+                    ("13" section nil nil [63335 63517])
+                    ("14" section nil nil [63517 63702])
+                    ("15" section nil nil [63702 64011])
+                    ("16" section nil nil [64011 64193])
+                    ("Footnotes:" section (:members 
+                      ( ("Org" anchor nil nil [65576 65579])
+                        ("Emacs" anchor nil nil [65632 65635])
+                        ("Validate XHTML 1.0" anchor nil nil [65702 65705]))                      ) nil [64193 65801]))                  ) nil [7282 65801]))              ) nil [7226 65801]))          
+    :file "life.html"
+    :pointmax 65801
+    :fsize 65802
+    :lastmodtime '(21021 30151 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!chu!Dropbox!ChuanHu!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

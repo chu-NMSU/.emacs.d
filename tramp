@@ -1,4 +1,4 @@
-;; -*- emacs-lisp -*- <13/07/23 15:08:40 /Users/chu/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <13/08/20 23:38:40 /Users/chu/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
@@ -36,7 +36,9 @@
   ("gid-integer" 30)
   ("gid-string" "grads")
   ("ls" "/bin/ls --color=never")
-  ("uid-integer" 20017))
+  ("uid-integer" 20017)
+  ("ls-dired" t)
+  ("trash" nil))
  (["scpc" "chu" "yifan.lab" nil nil]
   ("uname" "Linux 3.2.0-49-generic")
   ("test" "test")

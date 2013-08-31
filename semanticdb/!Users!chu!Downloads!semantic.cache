@@ -1,0 +1,45 @@
+;; Object Downloads/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Downloads/"
+  :tables (list 
+   (semanticdb-table "Lab1800118017.java"
+    :major-mode 'jde-mode
+    :tags 
+        '( ("f2013.lab1" package nil nil [1 20])
+            ("java.util.Calendar" include nil nil [21 47])
+            ("java.text.SimpleDateFormat" include nil nil [48 82])
+            ("Lab1800118017" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("showCurrentDate" function
+                       (:typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [119 354])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [535 548]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [511 1223])
+                    ("printPyramid" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol formal_parameters) [1259 1264]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1231 1728]))                  
+                :type "class")
+                nil [85 1730]))          
+    :file "Lab1800118017.java"
+    :pointmax 1726
+    :fsize 1731
+    :lastmodtime '(21021 18679 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!chu!Downloads!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

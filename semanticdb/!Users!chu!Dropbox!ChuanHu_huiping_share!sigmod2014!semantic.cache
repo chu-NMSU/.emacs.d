@@ -1,0 +1,37 @@
+;; Object sigmod2014/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sigmod2014/"
+  :tables (list 
+   (semanticdb-table "calls_papers_sigmod_research.shtml"
+    :major-mode 'html-mode
+    :tags 
+        '( ("The 2014 ACM SIGMOD/PODS Conference: Snowbird, Utah, USA - Call for Papers: SIGMOD Research" section nil nil [244 601])
+            ("#include virtual=\"header.html\"-->
+	
+<!--	<div id=\"masthead\"><img src=\"images/indy500_sigmod.jpg\" alt=\"top banner\" width=\"742\" height=\"330\" />" section (:members 
+              ( ("SIGMOD 2014 CALL FOR RESEARCH PAPERS" section (:members 
+                  ( ("TOPICS OF INTEREST" section nil nil [1560 3895])
+                    ("Organization" section nil nil [3895 6615])
+                    ("SUBMISSION GUIDELINES" section nil nil [6615 7297])
+                    ("SUBMISSION DEADLINE(all on 4:59 p.m. PST)" section (:members 
+                      ( ("FIRST SUBMISSION DATES" section nil nil [7787 8206])
+                        ("SECOND SUBMISSION DATES" section nil nil [8206 8616]))                      ) nil [7297 8616])
+                    ("PROCEEDINGS AVAILABILITY" section nil nil [8616 8966])
+                    ("CONFLICTS OF INTEREST" section nil nil [8966 10112])
+                    ("Duplicate Submissions" section nil nil [10112 10950])
+                    ("DUPLICATE SUBMISSIONS AND NOVELTY REQUIREMENTS" section nil nil [10950 12481])
+                    ("LENGTH, FILE TYPE, AND FORMATTING" section nil nil [12481 13912])
+                    ("ANONYMITY REQUIREMENTS FOR DOUBLE-BLIND REVIEWING" section nil nil [13912 17403])
+                    ("REVIEWING PROCESS" section nil nil [17403 18826])
+                    ("Awards" section nil nil [18826 19650]))                  ) nil [1029 19650]))              ) nil [601 19650]))          
+    :file "calls_papers_sigmod_research.shtml"
+    :pointmax 19650
+    :fsize 19649
+    :lastmodtime '(21013 22093 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!chu!Dropbox!ChuanHu_huiping_share!sigmod2014!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

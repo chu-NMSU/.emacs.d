@@ -1,0 +1,313 @@
+;; Object lab/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lab/"
+  :tables (list 
+   (semanticdb-table "lab1.java"
+    :major-mode 'jde-mode
+    :tags 
+        '( ("f2013.lab1" package nil nil [1 20])
+            ("java.util.Calendar" include nil nil [22 48])
+            ("lab1" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("showCurrentDate" function
+                       (:typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [146 744])
+                    ("printAPramidLine" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol formal_parameters) [899 904])
+                            ("lineNum" variable (:type "int") (reparse-symbol formal_parameters) [906 917]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [860 1188])
+                    ("printPyramid" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol formal_parameters) [1314 1319]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1282 1422])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [1542 1555]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1518 2002]))                  
+                :type "class")
+                nil [50 2005]))          
+    :file "lab1.java"
+    :pointmax 2006
+    :fsize 2005
+    :lastmodtime '(21022 43690 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "lab1.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("Spring 2013: CS272 Lab #1" section nil nil [8 51])
+            ("CS272 Lab Assignment #1: Getting familiar with Eclipse IDE by
+using basic Java constructs" section nil nil [51 58])
+            ("CS272 Lab Assignment #1: Getting familiar with Eclipse IDE by
+using basic Java constructs" section (:members 
+              ( ("CS272 Lab Assignment #1: Getting familiar with Eclipse IDE by
+using basic Java constructs" section (:members 
+                  ( ("lab1.java" anchor nil nil [632 635]))                  ) nil [113 3413]))              ) nil [58 3413]))          
+    :file "lab1.html"
+    :pointmax 3413
+    :fsize 3528
+    :lastmodtime '(21014 19542 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "lab2.java"
+    :major-mode 'jde-mode
+    :tags 
+        '( ("f2013" package nil nil [1 15])
+            ("lab2" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("calSphereVolume" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("radius" variable (:type "double") (reparse-symbol formal_parameters) [453 466]))                          
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [416 611])
+                    ("solveQuadraticEqu" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable (:type "double") (reparse-symbol formal_parameters) [1000 1008])
+                            ("b" variable (:type "double") (reparse-symbol formal_parameters) [1010 1018])
+                            ("c" variable (:type "double") (reparse-symbol formal_parameters) [1020 1028]))                          
+                        :type "double[]")
+                        (reparse-symbol class_member_declaration) [959 1345])
+                    ("existString" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("arr" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [1765 1777])
+                            ("name" variable (:type "String") (reparse-symbol formal_parameters) [1779 1790]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1731 1959])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [2033 2046]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2009 3921]))                  
+                :type "class")
+                nil [79 3928]))          
+    :file "lab2.java"
+    :pointmax 3929
+    :fsize 3928
+    :lastmodtime '(21025 9569 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "lab2.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("CS272 Lab2" section nil nil [240 2246])
+            ("/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = \"code-highlighted\";
+     elem.className   = \"code-highlighted\";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->" section nil nil [2246 3857])
+            ("/**
+ *
+ * @source: http://orgmode.org/mathjax/MathJax.js
+ *
+ * @licstart  The following is the entire license notice for the
+ *  JavaScript code in http://orgmode.org/mathjax/MathJax.js.
+ *
+ * Copyright (C) 2012-2013  MathJax
+ *
+ * Licensed under the Apache License, Version 2.0 (the \"License\");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an \"AS IS\" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in http://orgmode.org/mathjax/MathJax.js.
+ *
+ */
+
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code below.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code below is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code below.
+*/
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: [\"MMLorHTML.js\"], jax: [\"input/TeX\"],
+            jax: [\"input/TeX\", \"output/HTML-CSS\"],
+        extensions: [\"tex2jax.js\",\"TeX/AMSmath.js\",\"TeX/AMSsymbols.js\",
+                     \"TeX/noUndefined.js\"],
+        tex2jax: {
+            inlineMath: [ [\"\\\\(\",\"\\\\)\"] ],
+            displayMath: [ ['$$','$$'], [\"\\\\[\",\"\\\\]\"], [\"\\\\begin{displaymath}\",\"\\\\end{displaymath}\"] ],
+            skipTags: [\"script\",\"noscript\",\"style\",\"textarea\",\"pre\",\"code\"],
+            ignoreClass: \"tex2jax_ignore\",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: \"TeX\"
+        },
+        showProcessingMessages: true,
+        displayAlign: \"center\",
+        displayIndent: \"2em\",
+
+        \"HTML-CSS\": {
+             scale: 100,
+             availableFonts: [\"STIX\",\"TeX\"],
+             preferredFont: \"TeX\",
+             webFont: \"TeX\",
+             imageFont: \"TeX\",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    \"MML\",
+                 Firefox: \"MML\",
+                 Opera:   \"HTML\",
+                 other:   \"HTML\"
+             }
+        }
+    });
+/*]]>*///-->" section nil nil [3857 7232])
+            ("CS272 Lab Assignment #2: Getting familiar with program
+specification, test case design, javadoc tool usage, and file operations" section nil nil [7232 7239])
+            ("CS272 Lab Assignment #2: Getting familiar with program
+specification, test case design, javadoc tool usage, and file operations" section (:members 
+              ( ("CS272 Lab Assignment #2: Getting familiar with program
+specification, test case design, javadoc tool usage, and file operations" section (:members 
+                  ( ("lab2.java" anchor nil nil [7574 7577]))                  ) nil [7294 10896]))              ) nil [7239 10896]))          
+    :file "lab2.html"
+    :pointmax 10896
+    :fsize 10895
+    :lastmodtime '(21025 6320 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "lab2_chuan.java"
+    :major-mode 'jde-mode
+    :tags 
+        '( ("lab2" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("calSphereVolume" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("radius" variable (:type "double") (reparse-symbol formal_parameters) [114 127]))                          
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [77 136])
+                    ("solveQuadraticEqu" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("a" variable (:type "double") (reparse-symbol formal_parameters) [187 195])
+                            ("b" variable (:type "double") (reparse-symbol formal_parameters) [197 205])
+                            ("c" variable (:type "double") (reparse-symbol formal_parameters) [207 215]))                          
+                        :type "double[]")
+                        (reparse-symbol class_member_declaration) [146 225])
+                    ("existString" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("arr" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [269 281])
+                            ("name" variable (:type "String") (reparse-symbol formal_parameters) [283 294]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [235 304])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [373 386]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [349 964]))                  
+                :type "class")
+                nil [52 971]))          
+    :file "lab2_chuan.java"
+    :pointmax 1113
+    :fsize 971
+    :lastmodtime '(21022 53866 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!Users!chu!Dropbox!2013f_CS272!lab!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -2,16 +2,21 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("chu_reading.tex"
+(("diary.org"
+ (filename . "~/Dropbox/ChuanHu_huiping_share/diary.org")
+ (front-context-string . "\n\n** TODO <2013-")
+ (rear-context-string . "eenting test\n   ")
+ (position . 9880))
+("init.el"
+ (filename . "~/.emacs.d/init.el")
+ (front-context-string . "\n;; (load-theme ")
+ (rear-context-string . "-theme 'tron t))")
+ (position . 1526))
+("chu_reading.tex"
  (filename . "~/Documents/chuanhu/summary/chu_reading.tex")
  (front-context-string . "\\begin{equation*")
  (rear-context-string . "- u_k||$ one.\n  ")
  (position . 1463))
-("diary.org"
- (filename . "~/Dropbox/ChuanHu/diary.org")
- (front-context-string)
- (rear-context-string . "s any reference\n")
- (position . 841))
 ("life.org"
  (filename . "~/Dropbox/ChuanHu/life.org")
  (front-context-string . "\n* Emacs \n** Ema")

@@ -5,24 +5,29 @@
    (semanticdb-table "Test.java"
     :major-mode 'jde-mode
     :tags 
-        '( ("Test" type
+        '( ("java.util.HashMap" include nil nil [1 26])
+            ("Test" type
                (:typemodifiers ("public")
                 :members 
-                  ( ("main" function
+                  ( ("print" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [78 155])
+                    ("main" function
                        (:typemodifiers ("public" "static")
                         :arguments 
                           ( ("args" variable
                                (:dereference 1
                                 :type "String")
-                                (reparse-symbol formal_parameters) [48 61]))                          
+                                (reparse-symbol formal_parameters) [185 198]))                          
                         :type "void")
-                        (reparse-symbol class_member_declaration) [24 114]))                  
+                        (reparse-symbol class_member_declaration) [161 246]))                  
                 :type "class")
-                nil [1 116]))          
+                nil [50 248]))          
     :file "Test.java"
-    :pointmax 118
-    :fsize 117
-    :lastmodtime '(20977 29636 0 0)
+    :pointmax 251
+    :fsize 250
+    :lastmodtime '(21013 22366 0 0)
     :unmatched-syntax 'nil
     )
    )

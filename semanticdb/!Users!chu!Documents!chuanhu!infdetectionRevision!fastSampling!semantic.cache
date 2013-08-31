@@ -1,0 +1,51 @@
+;; Object fastSampling/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "fastSampling/"
+  :tables (list 
+   (semanticdb-table "infer.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sympy" include nil nil [1 20])
+            ("alpha_0, alpha_1, n_o, n_ob, n_ozb, alpha_theta, Z" code nil nil [48 160])
+            ("nn_opz, nn_op" code nil nil [172 210])
+            ("n_oaopb, alpha_gamma, n_oab, R_o, n_atab, alpha_psy, n_ab, T_alpha, alpha_eta, A" code nil nil [230 402])
+            ("nn_zt, T, alpha_phi, nn_z" code nil nil [410 472])
+            ("beta_0_num" code nil nil [474 501])
+            ("beta_0_denom" code nil nil [504 542])
+            ("beta_0" code nil nil [545 577])
+            ("beta_1_num" code nil nil [579 606])
+            ("beta_1_denom" code nil nil [609 647])
+            ("beta_1" code nil nil [650 682])
+            ("theta_0_num" code nil nil [684 721])
+            ("theta_0_denom" code nil nil [722 758])
+            ("theta_0" code nil nil [761 796])
+            ("theta_1_num" code nil nil [798 836])
+            ("theta_1_denom" code nil nil [837 874])
+            ("theta_1" code nil nil [877 912])
+            ("gamma_num" code nil nil [914 951])
+            ("gamma_denom" code nil nil [952 989])
+            ("gamma" code nil nil [992 1021])
+            ("psy_num" code nil nil [1024 1052])
+            ("psy_denom" code nil nil [1055 1091])
+            ("psy" code nil nil [1094 1117])
+            ("eta_num" code nil nil [1119 1146])
+            ("eta_denom" code nil nil [1149 1179])
+            ("eta" code nil nil [1182 1205])
+            ("phi_num" code nil nil [1207 1234])
+            ("phi_denom" code nil nil [1237 1267])
+            ("phi" code nil nil [1270 1293])
+            ("p0_num" code nil nil [1295 1334])
+            ("p0_denom" code nil nil [1335 1382])
+            ("p1_num" code nil nil [1384 1449])
+            ("p1_denom" code nil nil [1450 1529]))          
+    :file "infer.py"
+    :pointmax 1531
+    :fsize 1530
+    :lastmodtime '(21022 13329 0 0)
+    :unmatched-syntax '((NAME 1308 . 1314) ($EOI 1317 . 1317) (NAME 1308 . 1310) ($EOI 1310 . 1310) (NAME 1249 . 1258) ($EOI 1309 . 1309))
+    )
+   )
+  :file "!Users!chu!Documents!chuanhu!infdetectionRevision!fastSampling!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

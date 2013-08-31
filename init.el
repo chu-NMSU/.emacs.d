@@ -59,8 +59,9 @@
 ;;(color-theme-matrix)
 ;; tron theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(if window-system
-    (load-theme 'tron t))
+;; (if window-system
+;;     (load-theme 'tron t))
+(load-theme 'tron t)
 
 ;; linum mode always on
 ;;(add-hook 'find-file-hook (lambda () (linum-mode 1)))
@@ -106,16 +107,27 @@
 
 ;; Add the texlive bin path to Environment Variable PATH within Emacs.
 ;; Environment variables within Emacs may be different from real Max OS.
-(setenv "PATH"
-  (concat
-   "/usr/bin/:/usr/local/bin:/usr/local/texlive/2012/bin/universal-darwin:/opt/local/bin" 
-   (getenv "PATH")
-  )
-)
+;; (setenv "PATH"
+;;   (concat
+;;    "/usr/bin/:/usr/local/bin:/usr/local/texlive/2012/bin/universal-darwin:/opt/local/bin" 
+;;    (getenv "PATH")
+;;   )
+;; )
 
-(setq exec-path
-      (append exec-path
-	      '("/usr/bin" "/usr/local/bin" "/usr/local/texlive/2012/bin/universal-darwin" "/opt/local/bin")))
+;; (setq exec-path
+;;       (append exec-path
+;; 	      '("/usr/bin" "/usr/local/bin" "/usr/local/texlive/2012/bin/universal-darwin" "/opt/local/bin")))
+
+(defun set-exec-path-from-shell-PATH ()
+  (let ((path-from-shell (replace-regexp-in-string
+                          "[ \t\n]*$"
+                          ""
+                          (shell-command-to-string "$SHELL --login -i -c 'echo $PATH'"))))
+    (setenv "PATH" path-from-shell)
+    (setq eshell-path-env path-from-shell) ; for eshell users
+    (setq exec-path (split-string path-from-shell path-separator))))
+
+(if window-system (set-exec-path-from-shell-PATH))
 
 ;; ESS
 (load "~/.emacs.d/ess-12.09-2/lisp/ess-site.el")
@@ -125,7 +137,7 @@
 ;; http://www.research.att.com/sw/tools/graphviz/).
 ;;
 ;; To use graphviz-dot-mode, add 
-(load-file "~/.emacs.d/graphviz-dot-mode.el") 
+(load-file "~/.emacs.d/graphviz-dot-mode.el")
 ;; to your .emacs or ~/.xemacs/init.el
 ;;
 ;; The graphviz-dot-mode will do font locking, indentation, preview of graphs
@@ -146,6 +158,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-safe-themes (quote ("86e74c4c42677b593d1fab0a548606e7ef740433529b40232774fbb6bc22c048" "96d22c5b839a7088ca1c982b7517c7ecf8018a184be594b0f4fdc4e7dd8faae7" default)))
+ '(jde-enable-abbrev-mode t)
+ '(jde-javadoc-gen-destination-directory "doc")
+ '(python-indent-offset 4)
  '(safe-local-variable-values (quote ((whitespace-style face tabs spaces trailing lines space-before-tab::space newline indentation::space empty space-after-tab::space space-mark tab-mark newline-mark)))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -184,3 +200,16 @@
 (setq browse-url-browser-function 'w3m-browse-url)
 ;; (require 'mime-w3m)
 (setq w3m-use-cookies t)
+
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
+(ac-config-default)
+
+;; server mode
+(server-start)
+
+(defun server-shutdown()
+  (interactive)
+  (save-some-buffers)
+  (kill-emacs)
+  )
