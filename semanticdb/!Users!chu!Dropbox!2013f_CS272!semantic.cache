@@ -45,14 +45,14 @@
                   ( ("testMaxOf2" function
                        (:typemodifiers ("public")
                         :type "void")
-                        (reparse-symbol class_member_declaration) [117 213]))                  
+                        (reparse-symbol class_member_declaration) [117 262]))                  
                 :type "class")
-                nil [77 216]))          
+                nil [77 265]))          
     :file "AssertionEgTest.java"
-    :pointmax 217
-    :fsize 216
-    :lastmodtime '(21023 54103 0 0)
-    :unmatched-syntax '((MULT 48 . 49) (DOT 47 . 48) (IDENTIFIER 41 . 47) (DOT 40 . 41) (IDENTIFIER 35 . 40) (DOT 34 . 35) (IMPORT 17 . 23) (STATIC 24 . 30) (IDENTIFIER 31 . 34))
+    :pointmax 266
+    :fsize 265
+    :lastmodtime '(21033 23095 0 0)
+    :unmatched-syntax 'nil
     )
    )
   :file "!Users!chu!Dropbox!2013f_CS272!semantic.cache"

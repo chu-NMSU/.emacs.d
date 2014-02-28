@@ -4,16 +4,13 @@
 ;;emacs speaks R
 (add-to-list 'load-path "~/.emacs.d/ess-12.09-2/lisp")
 (add-to-list 'load-path "~/.emacs.d/jdee-2.4.1/lisp")
-(add-to-list 'load-path "/opt/local/share/emacs/24.3/site-lisp")
-(add-to-list 'load-path "/opt/local/share/emacs/site-lisp/")
-(add-to-list 'load-path "/opt/local/share/emacs/site-lisp/w3m")
 
 (set-default-font "DejaVu Sans Mono-18")
 
 (setq inhibit-startup-message 1)
 
 (setq scroll-margin 3 scroll-conservatively 10000)
-(setq default-fill-column 90)
+(setq default-fill-column 80)
 
 (setq visual-line-mode 1)
 
@@ -67,7 +64,7 @@
 ;;(add-hook 'find-file-hook (lambda () (linum-mode 1)))
 
 ;;拼写检查
-(setq-default ispell-program-name "/opt/local/bin/aspell")
+(setq-default ispell-program-name "/usr/local/bin/aspell")
 
 ;;org-mode
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
@@ -76,6 +73,9 @@
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
 (setq org-log-done t)
+
+;; js2-mode
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
 ;;latex 配置
 (mapc (lambda (mode)
@@ -170,10 +170,10 @@
  ;; If there is more than one, they won't work right.
  )
 
-(if window-system
-      (set-frame-size (selected-frame) 100 43))
+;; (if window-system
+;;       (set-frame-size (selected-frame) 100 43))
 
-(set-frame-position (selected-frame) 770 0)
+;; (set-frame-position (selected-frame) 770 0)
 
 ;;背景透明
 (setq alpha-list '((90 0) (70 0)))  ;;当前窗口和非当前窗口时透明度分别为90 80
@@ -192,14 +192,8 @@
 ;; maxframe function
 ;; https://github.com/rmm5t/maxframe.el
 ;; to maximize a frame, M-x maximize-frame
-(require 'maxframe)
+;; (require 'maxframe)
 ;;(add-hook 'window-setup-hook 'maximize-frame t)
-
-;;w3m configure
-(require 'w3m-load)
-(setq browse-url-browser-function 'w3m-browse-url)
-;; (require 'mime-w3m)
-(setq w3m-use-cookies t)
 
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")

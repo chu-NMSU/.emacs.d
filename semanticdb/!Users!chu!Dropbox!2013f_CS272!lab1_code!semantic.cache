@@ -477,22 +477,22 @@
                         :arguments 
                           ( ("n" variable (:type "int") (reparse-symbol formal_parameters) [493 498]))                          
                         :type "boolean")
-                        (reparse-symbol class_member_declaration) [458 855])
+                        (reparse-symbol class_member_declaration) [458 964])
                     ("main" function
                        (:typemodifiers ("public" "static")
                         :arguments 
                           ( ("args" variable
                                (:dereference 1
                                 :type "String")
-                                (reparse-symbol formal_parameters) [961 974]))                          
+                                (reparse-symbol formal_parameters) [1070 1083]))                          
                         :type "void")
-                        (reparse-symbol class_member_declaration) [937 1445]))                  
+                        (reparse-symbol class_member_declaration) [1046 1554]))                  
                 :type "class")
-                nil [94 1448]))          
+                nil [94 1557]))          
     :file "Lab1800021606.java"
-    :pointmax 1449
-    :fsize 1448
-    :lastmodtime '(21025 8618 0 0)
+    :pointmax 1558
+    :fsize 1557
+    :lastmodtime '(21027 61521 0 0)
     :unmatched-syntax 'nil
     )
    (semanticdb-table "Lab1800118017.java"
