@@ -3,7 +3,14 @@
 
 ;;emacs speaks R
 (add-to-list 'load-path "~/.emacs.d/ess-12.09-2/lisp")
+;;emacs jdee
 (add-to-list 'load-path "~/.emacs.d/jdee-2.4.1/lisp")
+;; emacs cedet
+(load-file "~/.emacs.d/cedet-1.1/common/cedet.el")
+(global-ede-mode 1)                      ; Enable the Project management system
+(semantic-load-enable-code-helpers)      ; Enable prototype help and smart completion 
+(global-srecode-minor-mode 1)            ; Enable template insertion menu
+
 
 (set-default-font "DejaVu Sans Mono-18")
 
@@ -55,16 +62,16 @@
 ;; (color-theme-initialize)
 ;;(color-theme-matrix)
 ;; tron theme
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+;;(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 ;; (if window-system
 ;;     (load-theme 'tron t))
-(load-theme 'tron t)
+;;(load-theme 'tron t)
 
 ;; linum mode always on
 ;;(add-hook 'find-file-hook (lambda () (linum-mode 1)))
 
 ;;拼写检查
-(setq-default ispell-program-name "/usr/local/bin/aspell")
+(setq-default ispell-program-name "/usr/bin/aspell")
 
 ;;org-mode
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
