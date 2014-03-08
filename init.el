@@ -29,16 +29,16 @@
 (setq display-time-day-and-date t)
 (setq display-time-interval 10)
 
-;;支持外部数据粘贴
+;;copy and paste outer text
 (setq x-select-enable-clipboard t)
-;;可以复制外界文字进来
+;;copy and paste outer text
 (set-clipboard-coding-system 'ctext)
-;;不生成临时文件
+;;no temporal file
 (setq-default make-backup-files nil)
-;高亮显示成对括号，但不来回弹跳
+;;highlight parenthesis without jumping 
 (show-paren-mode t)
 (setq show-paren-style 'parentheses)
-;;只渲染当前屏幕语法高亮，加快显示速度
+;;highlight only current screen
 (setq font-lock-maximum-decoration t)
 ;;non blinking cursor
 (blink-cursor-mode 0)
@@ -57,21 +57,22 @@
     (tool-bar-mode -1)
     )
 
-;;主题插件
+;;color theme plugin;  this works for version before 24
 ;; (require 'color-theme)			
 ;; (color-theme-initialize)
 ;;(color-theme-matrix)
-;; tron theme
-;;(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+
+;; tron theme;  this works for version 24
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 ;; (if window-system
 ;;     (load-theme 'tron t))
-;;(load-theme 'tron t)
+(load-theme 'tron t)
 
 ;; linum mode always on
 ;;(add-hook 'find-file-hook (lambda () (linum-mode 1)))
 
-;;拼写检查
-(setq-default ispell-program-name "/usr/bin/aspell")
+;;aspell spell check
+(setq-default ispell-program-name "/usr/local/bin/aspell")
 
 ;;org-mode
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
@@ -84,7 +85,7 @@
 ;; js2-mode
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
-;;latex 配置
+;;latex configuration
 (mapc (lambda (mode)
       (add-hook 'LaTeX-mode-hook mode))
       (list ;;'auto-fill-mode
@@ -182,8 +183,8 @@
 
 ;; (set-frame-position (selected-frame) 770 0)
 
-;;背景透明
-(setq alpha-list '((90 0) (70 0)))  ;;当前窗口和非当前窗口时透明度分别为90 80
+;;transparent windows
+(setq alpha-list '((90 0) (70 0)))
 (defun loop-alpha ()
     (interactive)
     (let ((h (car alpha-list)))
@@ -192,15 +193,9 @@
              (add-to-list 'default-frame-alist (cons 'alpha (list a ab))))
          (car h) (car (cdr h)))
         (setq alpha-list (cdr (append alpha-list (list h))))))
-(global-set-key [f12] 'loop-alpha)  ;;全局绑定F12键为Emacs半透明功能键
+(global-set-key [f12] 'loop-alpha)  ;;global bind to f12
 
 (setq ring-bell-function 'ignore)
-
-;; maxframe function
-;; https://github.com/rmm5t/maxframe.el
-;; to maximize a frame, M-x maximize-frame
-;; (require 'maxframe)
-;;(add-hook 'window-setup-hook 'maximize-frame t)
 
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
