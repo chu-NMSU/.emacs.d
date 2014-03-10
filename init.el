@@ -11,8 +11,9 @@
 (semantic-load-enable-code-helpers)      ; Enable prototype help and smart completion 
 (global-srecode-minor-mode 1)            ; Enable template insertion menu
 
-
-(set-default-font "DejaVu Sans Mono-18")
+;; emacs g client
+(add-to-list "~/.emacs.d/g-client")
+(load-library "g")
 
 (setq inhibit-startup-message 1)
 
