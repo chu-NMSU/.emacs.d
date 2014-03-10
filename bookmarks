@@ -2,12 +2,7 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("diary.org"
- (filename . "~/Dropbox/ChuanHu_huiping_share/diary.org")
- (front-context-string . "\n\n** TODO <2013-")
- (rear-context-string . "eenting test\n   ")
- (position . 9880))
-("init.el"
+(("init.el"
  (filename . "~/.emacs.d/init.el")
  (front-context-string . "\n;; (load-theme ")
  (rear-context-string . "-theme 'tron t))")

@@ -12,8 +12,8 @@
 (global-srecode-minor-mode 1)            ; Enable template insertion menu
 
 ;; emacs g client
-(add-to-list "~/.emacs.d/g-client")
-(load-library "g")
+;; (add-to-list 'load-path "~/.emacs.d/g-client")
+;; (load-library "g")
 
 (setq inhibit-startup-message 1)
 
