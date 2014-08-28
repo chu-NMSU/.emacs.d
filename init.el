@@ -160,7 +160,7 @@
 ;; There is support for viewing an generated image with C-c p.
 
 ;; jdee
-(load "jde")
+;; (load "jde")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -184,7 +184,7 @@
 
 ;; (set-frame-position (selected-frame) 770 0)
 
-;;transparent windows
+;;transparent windows. only work on linux
 (setq alpha-list '((90 0) (70 0)))
 (defun loop-alpha ()
     (interactive)
